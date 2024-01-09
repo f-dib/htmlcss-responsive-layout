@@ -75,12 +75,15 @@ div.app-dev{
     SITE SECTIONS
 ************************************************/
 /* navbar section */
+header{
+    background-color: #0084fd;
+}
+
 nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0px 30px;
-    background-color: #0084fd;
     color: white;
 }
 
@@ -264,5 +267,8 @@ footer{
 }
 
 @media screen and (min-width: 1200px){
-    
+    .max-width{
+        max-width: 1200px;
+        margin: auto;
+    }
 }
