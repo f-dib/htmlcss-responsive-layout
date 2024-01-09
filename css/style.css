@@ -62,7 +62,9 @@ div.app-dev{
     height: 500px;
 }
 
-
+.benefit-card{
+    height: 400px;
+}
 
 
 
@@ -119,19 +121,34 @@ div.app-dev{
 /* testimonial section */
 section.testimonials{
     justify-content: center;
-    align-items: center;
     gap: 35px;
 }
 
 .testimonial-card{
-    width: 100%;
-
     justify-content: space-around;
     align-items: center;
 
     border-radius: 45px;
 }
 /* end testimonial section */
+
+/* benefit section */
+.benefit{
+    gap: 30px;
+}
+
+section div h1{
+    text-align: center;
+}
+
+.benefit-card{
+    align-items: flex-start;
+    justify-content: space-around;
+
+    border-radius: 18px;
+    background-color: white;
+}
+/* end benefit section */
 
 /* footer section */
 footer{
