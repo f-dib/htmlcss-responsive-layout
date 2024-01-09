@@ -150,6 +150,13 @@ section div h1{
 }
 /* end benefit section */
 
+/* get started section */
+.center{
+    align-items: center;
+    gap: 45px;
+}
+/* end get started section */
+
 /* footer section */
 footer{
     background-color: #333333;
