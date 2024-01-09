@@ -5,6 +5,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'PT Sans', sans-serif;
+    border: .5px solid red;
 }
 
 
@@ -12,12 +14,53 @@
     UTILITIES
 ************************************************/
 
+/************************************************
+    SECTIONS TO DELETE
+************************************************/
+nav{
+    height: 75px;
+}
+
 
 /************************************************
     SITE SECTIONS
 ************************************************/
+/* navbar section */
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 30px;
+    background-color: #0084fd;
+    color: white;
+}
+/* end navbar */
+
+/* footer section */
+footer{
+    background-color: #333333;
+}
+
+.footer-text{
+    font-size: .85em;
+    padding: 35px;
+    text-align: center;
+}
+/* end footer section */
+
 
 
 /************************************************
     RESPONSIVE SECTION
 ************************************************/
+@media screen and (min-width: 768px){
+
+}
+
+@media screen and (min-width: 992px){
+
+}
+
+@media screen and (min-width: 1200px){
+
+}
