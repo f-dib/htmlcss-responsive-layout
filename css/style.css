@@ -13,7 +13,14 @@
 /************************************************
     UTILITIES
 ************************************************/
+section{
+    padding: 30px;
+}
 
+.container{
+    display: flex;
+    flex-direction: column;
+}
 /************************************************
     SECTIONS TO DELETE
 ************************************************/
@@ -28,6 +35,14 @@ nav{
 
 .card{
     height: 360px;
+}
+
+section.dev{
+    height: 1400px;
+}
+
+div.app-dev{
+    height: 615px;
 }
 /************************************************
     SITE SECTIONS
@@ -45,17 +60,11 @@ nav{
 
 /* downloas section */
 section.download{
-    display: flex;
-    flex-direction: column;
     gap: 20px;
-
-    padding: 30px;
 }
 
 .card{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-around;
 
     padding: 30px;
@@ -66,7 +75,27 @@ section.download{
 /* end download section */
 
 /* app developement section */
+section.dev{
+    background-color: #9792e4;
+}
 
+div.plan{
+    justify-content: space-around;
+    align-items: flex-start;
+    
+    height: 50%;
+}
+
+div.app-dev{
+    justify-content: space-around;
+    align-items: center;
+
+    margin-top: 20px;
+    
+    border-radius: 45px;
+    
+    background-color: white;
+}
 /* end app developement section */
 
 /* footer section */
