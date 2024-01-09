@@ -10,6 +10,10 @@
 }
 
 
+
+
+
+
 /************************************************
     UTILITIES
 ************************************************/
@@ -21,6 +25,15 @@ section{
     display: flex;
     flex-direction: column;
 }
+
+.bg-purple{
+    background-color: #9792e4;
+}
+
+
+
+
+
 /************************************************
     SECTIONS TO DELETE
 ************************************************/
@@ -44,6 +57,15 @@ section.dev{
 div.app-dev{
     height: 615px;
 }
+
+.testimonial-card{
+    height: 500px;
+}
+
+
+
+
+
 /************************************************
     SITE SECTIONS
 ************************************************/
@@ -75,10 +97,6 @@ section.download{
 /* end download section */
 
 /* app developement section */
-section.dev{
-    background-color: #9792e4;
-}
-
 div.plan{
     justify-content: space-around;
     align-items: flex-start;
@@ -98,6 +116,23 @@ div.app-dev{
 }
 /* end app developement section */
 
+/* testimonial section */
+section.testimonials{
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+}
+
+.testimonial-card{
+    width: 100%;
+
+    justify-content: space-around;
+    align-items: center;
+
+    border-radius: 45px;
+}
+/* end testimonial section */
+
 /* footer section */
 footer{
     background-color: #333333;
@@ -109,6 +144,8 @@ footer{
     text-align: center;
 }
 /* end footer section */
+
+
 
 
 
