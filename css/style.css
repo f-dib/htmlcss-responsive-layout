@@ -83,6 +83,18 @@ nav{
     background-color: #0084fd;
     color: white;
 }
+
+/* nav hide section */
+.nav-link li{
+    padding: calc(25px / 2);
+
+    text-decoration: none;
+    list-style: none;
+}
+
+ul.nav-link{
+    display: none;
+}
 /* end navbar */
 
 /* downloas section */
@@ -106,7 +118,7 @@ div.plan{
     justify-content: space-around;
     align-items: flex-start;
     
-    height: 50%;
+    height: 750px;
 }
 
 div.app-dev{
@@ -221,9 +233,36 @@ footer{
 }
 
 @media screen and (min-width: 992px){
+    .menu-link{
+        display: none;
+    }
 
+    ul.nav-link{
+        display: flex;
+    }
+
+    .big.column{
+        flex-direction: row;
+    }
+
+    .column.dev{
+        flex-direction: row;
+    }
+
+    .plan.column{
+        width: 50%;
+    }
+
+    div.try-app{
+        width: 50%;
+    }
+
+    
+    div.mini-card{
+        width: calc(100% / 3 - 30px / 2);
+    }
 }
 
 @media screen and (min-width: 1200px){
-
+    
 }
