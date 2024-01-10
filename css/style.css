@@ -46,17 +46,12 @@ button{
     border-radius: 18px;
 }
 
+h2{
+    font-weight: 700;
+}
 /************************************************
     SECTIONS TO DELETE
 ************************************************/
-/* div.app-dev{
-    height: 615px;
-} */
-
-.testimonial-card{
-    height: 500px;
-}
-
 .benefit-card{
     height: 400px;
 }
@@ -135,7 +130,10 @@ section.download{
 }
 
 div button.store{
-    padding: 0.5em 3em;
+    padding: 0.5em 2.3em;
+
+    letter-spacing: 0.2em;
+
     color: white;
     background-color: #0084fd;
 }
@@ -165,7 +163,6 @@ div.plan{
 
     color: white;
 }
-
 
 .dev .plan div p{
     line-height: 1.6em;
@@ -216,13 +213,60 @@ div.app-dev{
 section.testimonials{
     justify-content: center;
     gap: 35px;
+
+    text-align: center;
+}
+
+.testimonials div h2{
+    font-size: 2em;
+
+    color: #9792e4;
+}
+
+.testimonials div p{
+    font-weight: 400;
+    line-height: 1.6em;
+
+    padding: 0em .8em;
 }
 
 .testimonial-card{
-    justify-content: space-around;
     align-items: center;
+    gap: 1em;
+
+    padding: 1.9em;
 
     border-radius: 45px;
+}
+
+.testimonial-card div.photo{
+    height: 200px;
+    width: 200px;
+}
+
+.testimonial-card div img{
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+div.text-testimonial div p{
+    padding: 0;
+    
+    margin-bottom: 1em;
+    
+    color: white;
+}
+
+div.text-testimonial div p i{
+    font-size: 1em;
+
+    color: white;
+}
+
+div.text-testimonial div strong{
+    letter-spacing: 0.2em;
+    color: white;
 }
 /* end testimonial section */
 
@@ -298,6 +342,20 @@ footer{
         width: calc(100% / 3 - 25px * 2 / 3);
     }
 
+    .container.testimonial-card{
+        justify-content: space-between;
+    }
+
+    .container .photo{
+        width: 30%;
+    }
+
+    .container .text-testimonial{
+        width: 66%;
+
+        text-align: start;
+    }
+
     div.mini-card{
         width: calc(100% / 2 - 30px / 2);
         padding-bottom: 30px;
@@ -359,7 +417,7 @@ footer{
     .plan.column{
         width: 50%;
     }
-    
+
     /* da fixare */
     .dev .try-app{
         width: 50%;
