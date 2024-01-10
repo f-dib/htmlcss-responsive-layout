@@ -18,7 +18,7 @@
     UTILITIES
 ************************************************/
 section{
-    padding: 30px;
+    padding: 1.9em;
 }
 
 .container{
@@ -36,23 +36,19 @@ section{
 }
 
 
+button{
+    color: black;
+    background-color: white;
+    border: none;
+    padding: .5em 1em;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 18px;
+}
 
 /************************************************
     SECTIONS TO DELETE
 ************************************************/
-nav{
-    height: 75px;
-}
-
-
-.big.card{
-    height: 610px;
-}
-
-.card{
-    height: 360px;
-}
-
 section.dev{
     height: 1400px;
 }
@@ -69,8 +65,6 @@ div.app-dev{
     height: 400px;
 }
 
-
-
 /************************************************
     SITE SECTIONS
 ************************************************/
@@ -83,7 +77,17 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0px 30px;
+    padding: 1em 2em;
+    color: white;
+}
+
+img{
+    display: block;
+    width: 100%;
+}
+
+.fa-solid.fa-bars{
+    font-size: 2em;
     color: white;
 }
 
@@ -102,17 +106,43 @@ ul.nav-link{
 
 /* downloas section */
 section.download{
-    gap: 20px;
+    gap: 1.25em;
+}
+
+.big.card{
+    padding: 1.9em 1.9em 0;
 }
 
 .card{
     align-items: flex-start;
-    justify-content: space-around;
+    gap: 2.2em;
 
-    padding: 30px;
+    padding: 1.9em;
 
     border-radius: 20px;
     background-color: #b5ddff;
+}
+
+.fa-solid{
+    font-size: 4.5em;
+    color: #0084fd;
+}
+
+.card div h2{
+    color: #0084fd;
+}
+
+div button.store{
+    padding: 0.5em 4.3em;
+    color: white;
+    background-color: #0084fd;
+}
+
+.second.card,
+.general.card{
+    align-items: center;
+
+    text-align: center;
 }
 /* end download section */
 
@@ -201,11 +231,16 @@ footer{
     }
 
     section.download{
+        justify-content: center;
         gap: -20px;
     }
        
     .big.card{
         width: calc(100% / 3 * 2 - 25px / 2);
+    }
+
+    img.phone{
+        width: 57%;
     }
 
     div.second{
@@ -242,10 +277,26 @@ footer{
 
     ul.nav-link{
         display: flex;
+        align-items: center;
+    }
+
+    .big.card.column{
+        padding: 0;
+    }
+
+    /* width doubled because the 
+    box occupies 2/3 of the total width */
+    .big .column.card{
+        width: 120%;
+    }
+
+    div img.phone{
+        width: 80%;
     }
 
     .big.column{
         flex-direction: row;
+        padding: 1em 2em;
     }
 
     .column.dev{
