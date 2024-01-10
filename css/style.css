@@ -47,7 +47,19 @@ button{
 }
 
 h2{
+    font-size: 1.4em;
     font-weight: 700;
+}
+
+div.photo{
+    height: 200px;
+    width: 200px;
+}
+
+div img.photo-testimonial{
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
 }
 /************************************************
     SECTIONS TO DELETE
@@ -181,6 +193,7 @@ div.app-dev{
 }
 
 .try-app div h2{
+    font-size: 1.4em;
     color: black;
 }
 
@@ -239,17 +252,6 @@ section.testimonials{
     padding: 1.9em;
 
     border-radius: 45px;
-}
-
-.testimonial-card div.photo{
-    height: 200px;
-    width: 200px;
-}
-
-.testimonial-card div img{
-    height: 100%;
-    object-fit: cover;
-    border-radius: 50%;
 }
 
 div.text-testimonial div p{
@@ -331,6 +333,54 @@ h2.purple-color{
 }
 /* end benefit section */
 
+/* about us section */
+.about-left h2{
+    text-align: start;
+
+    color: #9792e4;
+
+    margin: 0.7em 0em 1.5em;
+}
+
+.about-left p{
+    line-height: 1.6em;
+
+    margin-bottom: 3em;
+}
+
+.about-right div.photo{
+    margin-bottom: 1.3em;
+    position: relative;
+}
+
+.about-right div.photo i{
+    position: absolute;
+
+    top: 0;
+    right: 0;
+
+    color: #9792e4;
+}
+
+.about-right div h2{
+    font-size: 1.3em;
+
+    margin-bottom: 1.3em;
+
+    text-align: start;
+
+    color: #9792e4;
+}
+
+.about-right div button{
+    padding: 0.4em 1em;
+
+    font-size: 0.6em;
+    color: white;
+    
+    background-color: #9792e4;
+}
+/* end about us section */
 
 /* get started section */
 .center{
@@ -410,11 +460,17 @@ footer{
     }
 
     .about-left{
-        width: 60%;
+        width: 55%;
+        margin-right: 10%;
     }
 
     .about-right{
-        width: 40%;
+        width: 35%;
+    }
+    
+    .about-right div.photo{
+        height: 200px;
+        width: 200px;
     }
 }
 
@@ -476,8 +532,26 @@ footer{
         margin: auto;
     }
 
+    .container div.photo img{
+        max-width: 200px;
+        margin: auto;
+    }
+
     div.mini-card{
         width: calc(98% / 3 - 30px / 2);
+    }
+
+    .about-left{
+        width: 65%;
+        margin-right: 10%;
+    }
+
+    .about-right{
+        width: 25%;
+    }
+
+    .about-right div h2{
+        padding-right: 3em;
     }
 }
 
