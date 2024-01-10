@@ -49,13 +49,9 @@ button{
 /************************************************
     SECTIONS TO DELETE
 ************************************************/
-section.dev{
-    height: 1400px;
-}
-
-div.app-dev{
+/* div.app-dev{
     height: 615px;
-}
+} */
 
 .testimonial-card{
     height: 500px;
@@ -154,21 +150,65 @@ div button.store{
 
 /* app developement section */
 div.plan{
-    justify-content: space-around;
+
     align-items: flex-start;
-    
-    height: 750px;
+}
+
+.dev .plan div img{
+    margin-bottom: 4.7em;
+}
+
+.dev .plan div h2{
+    font-size: 2em;
+
+    margin-bottom: 2em;
+
+    color: white;
+}
+
+
+.dev .plan div p{
+    line-height: 1.6em;
+    color: white;
 }
 
 div.app-dev{
     justify-content: space-around;
     align-items: center;
+    gap: 30px;
 
-    margin-top: 20px;
+    margin-top: 30px;
+    padding: 1.9em;
     
     border-radius: 45px;
     
     background-color: white;
+}
+
+.app-dev div p{
+    text-align: center;
+
+    font-style: italic;
+    line-height: 1.6em;
+}
+
+.circle{
+    position: relative;
+    height: 3em;
+    width: 3em;
+
+    border-radius: 50%;
+}
+
+.app-dev div i{
+    position: absolute;
+
+    top: 30%;
+    left: 34%;
+
+    font-size: 1.3em;
+
+    color: black;
 }
 /* end app developement section */
 
@@ -237,7 +277,7 @@ footer{
     }
 
     section.download{
-        justify-content: center;
+        justify-content: space-between;
         gap: -20px;
     }
        
@@ -313,17 +353,22 @@ footer{
 
     .column.dev{
         flex-direction: row;
+        gap: 1.6em;
     }
 
     .plan.column{
         width: 50%;
     }
-
-    div.try-app{
+    
+    /* da fixare */
+    .dev .try-app{
         width: 50%;
     }
 
-    
+    .app-dev{
+        scale: 0.7;
+    }
+
     div.mini-card{
         width: calc(100% / 3 - 30px / 2);
     }
