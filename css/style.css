@@ -148,7 +148,6 @@ div button.store{
 
 /* app developement section */
 div.plan{
-
     align-items: flex-start;
 }
 
@@ -170,9 +169,8 @@ div.plan{
 }
 
 div.app-dev{
-    justify-content: space-around;
     align-items: center;
-    gap: 30px;
+    gap: 1.9em;
 
     margin-top: 30px;
     padding: 1.9em;
@@ -180,6 +178,10 @@ div.app-dev{
     border-radius: 45px;
     
     background-color: white;
+}
+
+.try-app div h2{
+    color: black;
 }
 
 .app-dev div p{
@@ -275,18 +277,60 @@ div.text-testimonial div strong{
     gap: 30px;
 }
 
-section div h1{
+section div h2{
+    font-size: 2em;
+
+    color: white;
+
     text-align: center;
 }
 
 .benefit-card{
     align-items: flex-start;
-    justify-content: space-around;
+
+    padding: 1.9em;
 
     border-radius: 18px;
     background-color: white;
 }
+
+.purple-color{
+    color: #9792e4;
+}
+
+div.purple-color{
+    font-size: 2.5em;
+    font-weight: 700;
+
+    margin-bottom: 36px;
+}
+
+h2.purple-color{
+    font-size: 1.2em;
+    font-weight: 700;
+
+    margin-bottom: 20px;
+}
+
+.benefit-card div p{
+    line-height: 1.6em;
+
+    margin-bottom: 25px;
+
+    color: #737373;
+}
+
+.benefit-card div button{
+    padding: 0.5em 3em;
+
+    font-weight: 700;
+    letter-spacing: 0.2em;
+
+    color: white;
+    background-color: #9792e4;
+}
 /* end benefit section */
+
 
 /* get started section */
 .center{
@@ -418,17 +462,22 @@ footer{
         width: 50%;
     }
 
-    /* da fixare */
     .dev .try-app{
-        width: 50%;
+        width: 40%;
+        align-items: flex-end;
     }
 
     .app-dev{
-        scale: 0.7;
+        height: 70%;
+    }
+
+    .app-dev div img{
+        width: 60%;
+        margin: auto;
     }
 
     div.mini-card{
-        width: calc(100% / 3 - 30px / 2);
+        width: calc(98% / 3 - 30px / 2);
     }
 }
 
